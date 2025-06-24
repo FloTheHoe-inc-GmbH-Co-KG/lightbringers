@@ -12,6 +12,7 @@ Inconsolata     monospace
 body {
     font-family: "Quicksand", "Ubuntu", sans-serif;
     font-size: large;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -57,4 +58,53 @@ a:hover {
 h2:hover {
     background-color: palegoldenrod;
     
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgoldenrodyellow;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul.navbar li {
+    display: inline;
+    float: left;
+}
+
+ul.navbar li a{
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar li a:hover:not(.active) {
+  background-color: palegoldenrod;
+  text-decoration: none;
+  color: #5b606a;
+}
+
+ul.navbar li a.active {
+  background-color: gold;
+  text-decoration: none;
+    color: #5b606a;
+}
+
+h1.main-h {
+    margin-top: 75px;
+}
+
+div.content {
+    margin: 7px;
+    margin-top: 75px;
+}
+
+article.carrier{
+    max-width: 60%;
+    text-align: justify;
 }
