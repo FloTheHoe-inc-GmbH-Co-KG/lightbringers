@@ -8,6 +8,7 @@ Quicksand       normal text
 Comfortaa       big text
 Inconsolata     monospace
 */
+
 /**** BODY ****/
 body {
     font-family: "Quicksand", "Ubuntu", sans-serif;
@@ -24,8 +25,6 @@ table, th, td{
     text-align: center;
     min-width: 95px;
 }
-
-
 
 table {
     background-color: #343236;
@@ -64,6 +63,7 @@ h2:hover {
     background-color: palegoldenrod;
     
 }
+
 /****NAVIGATION****/
 .navigation {
     display: flex;
@@ -87,6 +87,7 @@ header {
     align-items: center; 
     justify-content: space-between; 
 }
+
 header h1 {
     height: auto;
      margin: 0;
@@ -138,10 +139,12 @@ header h1 {
     display: flex;
     gap: 4vw;
 }
+
 .lichtträger div {
     flex: 1;
     width: 48vw;
 }
+
 .lichtträger img {
     width: 48vw;
     object-fit: cover;
@@ -159,6 +162,7 @@ header h1 {
 .body_prophetics {
     background-color: #fffef6;
 }
+
 .prophecies {
   background-color: #fffef6;
   padding: 6vh 8vw;
@@ -215,4 +219,53 @@ header h1 {
 
 .prophecies-block[open] summary::after {
   transform: rotate(180deg);
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgoldenrodyellow;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul.navbar li {
+    display: inline;
+    float: left;
+}
+
+ul.navbar li a{
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar li a:hover:not(.active) {
+  background-color: palegoldenrod;
+  text-decoration: none;
+  color: #5b606a;
+}
+
+ul.navbar li a.active {
+  background-color: gold;
+  text-decoration: none;
+    color: #5b606a;
+}
+
+h1.main-h {
+    margin-top: 75px;
+}
+
+div.content {
+    margin: 7px;
+    margin-top: 75px;
+}
+
+article.carrier {
+    max-width: 60%;
+    text-align: justify;
 }
