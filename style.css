@@ -135,17 +135,17 @@ header h1 {
 
 
 /****LICHTTRÄGER****/
-.lichtträger {
+.carrier {
     display: flex;
     gap: 4vw;
 }
 
-.lichtträger div {
+.carrier div {
     flex: 1;
     width: 48vw;
 }
 
-.lichtträger img {
+.carrier img {
     width: 48vw;
     object-fit: cover;
     height: 100%;
