@@ -9,10 +9,11 @@ Comfortaa       big text
 Inconsolata     monospace
 */
 
+/**** BODY ****/
 body {
     font-family: "Quicksand", "Ubuntu", sans-serif;
     font-size: large;
-    margin: 0;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,22 +43,182 @@ dt {
 a {
     color:	#5b606a;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 h2 {
     border-left: 5px solid gold;
     background-color: lightgoldenrodyellow;
-    padding: 7px;
+    width: 100%;
+    padding-top: 5px;
 }
 
 a:hover {
     color: darkorange;
-    text-decoration: underline;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 h2:hover {
     background-color: palegoldenrod;
     
+}
+
+/****NAVIGATION****/
+.navigation {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    gap: 30px;
+    padding-right: 2vw;
+}
+
+/****HEADER****/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+header h1 {
+    height: auto;
+     margin: 0;
+    padding: 1vw;
+}
+
+
+/****STARTSEITE****/
+.intro-hero {
+  background-color: #fffaf0;
+  padding: 12vh 5vw;
+  text-align: center;
+  border-bottom: 3px solid gold;
+}
+
+.hero-text .line {
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0.2em 0;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.hero-text .highlight {
+  color: goldenrod;
+  font-weight: 600;
+  font-size: 2.2em;
+  margin-top: 1em;
+}
+
+.hero-text .small {
+  font-size: 1.1em;
+  font-weight: 300;
+  font-family: "Quicksand", sans-serif;
+  margin-top: 2em;
+  line-height: 1.6;
+}
+
+.hero-text .quote {
+  font-style: italic;
+  font-size: 1.1em;
+  color: #666;
+  margin-top: 3em;
+  font-family: "Quicksand", sans-serif;
+}
+
+
+/****LICHTTRÄGER****/
+.carrier {
+    display: flex;
+    gap: 4vw;
+}
+
+.carrier div {
+    flex: 1;
+    width: 48vw;
+}
+
+.carrier img {
+    width: 48vw;
+    object-fit: cover;
+    height: 100%;
+}
+
+/****PYRAMIDE DER REINHEIT****/
+.reinheit {
+    display:flex;
+    justify-content: center;
+}
+
+
+/****PROPHEZEICHUNGEN****/
+.body_prophetics {
+    background-color: #fffef6;
+}
+
+.prophecies {
+  background-color: #fffef6;
+  padding: 6vh 8vw;
+  font-family: "Quicksand", sans-serif;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.prophecies h2 {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 2.2em;
+  color: goldenrod;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.prophecies-block {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border-left: 4px solid gold;
+  background-color: #fdfcf7;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.prophecies-block summary {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #333;
+  list-style: none;
+  position: relative;
+  padding-right: 25px;
+}
+
+.prophecies-block[open] summary {
+  color: goldenrod;
+}
+
+.prophecies-block p {
+  margin: 10px 0 0;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Pfeil hinzufügen */
+.prophecies-block summary::after {
+  content: "▾";
+  position: absolute;
+  right: 0;
+  font-size: 1em;
+  transform: rotate(0deg);
+  transition: 0.3s ease;
+}
+
+.prophecies-block[open] summary::after {
+  transform: rotate(180deg);
 }
 
 ul.navbar {
