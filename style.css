@@ -50,8 +50,7 @@ h2 {
   border-left: 5px solid gold;
   background-color: lightgoldenrodyellow;
   width: 100%;
-  padding-top: 5px;
-  padding-left: 5px;
+  padding: 5px
 }
 
 a:hover {
