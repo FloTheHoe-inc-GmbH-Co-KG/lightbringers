@@ -11,81 +11,82 @@ Inconsolata     monospace
 
 /**** BODY ****/
 body {
-    font-family: "Quicksand", "Ubuntu", sans-serif;
-    font-size: large;
-    scroll-behavior: smooth;
+  font-family: "Quicksand", "Ubuntu", sans-serif;
+  font-size: large;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Comfortaa", "Ubuntu", sans-serif;
+  font-family: "Comfortaa", "Ubuntu", sans-serif;
 }
 
 table, th, td{
-    border: 1px solid black;
-    text-align: center;
-    min-width: 95px;
+  border: 1px solid black;
+  text-align: center;
+  min-width: 95px;
 }
 
 table {
-    background-color: #343236;
-    color: white;
+  background-color: #343236;
+  color: white;
 }
 
 thead, td.time {
-    background-color: orange;
-    color: black;
+  background-color: orange;
+  color: black;
 }
 
 dt {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 a {
-    color:	#5b606a;
-    text-decoration: none;
-    transition: 0.5s;
+  color:	#5b606a;
+  text-decoration: none;
+  transition: 0.5s;
 }
 
 h2 {
-    border-left: 5px solid gold;
-    background-color: lightgoldenrodyellow;
-    width: 100%;
-    padding-top: 5px;
+  border-left: 5px solid gold;
+  background-color: lightgoldenrodyellow;
+  width: 100%;
+  padding-top: 5px;
+  padding-left: 5px;
 }
 
 a:hover {
-    color: darkorange;
-    text-decoration: none;
-    font-weight: bold;
+  color: darkorange;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 h2:hover {
-    background-color: palegoldenrod;
+  background-color: palegoldenrod;
     
 }
 
 /****NAVIGATION****/
 .navigation {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    height: auto;
-    gap: 30px;
-    padding-right: 2vw;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  gap: 30px;
+  padding-right: 2vw;
 }
 
 /****HEADER****/
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 10vh;
-    z-index: 1;
-    background-color: white;
-    display: flex;
-    align-items: center; 
-    justify-content: space-between; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 10vh;
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
 }
 
 header h1 {
@@ -136,31 +137,31 @@ header h1 {
 
 /****LICHTTRÄGER****/
 .carrier {
-    display: flex;
-    gap: 4vw;
+  display: flex;
+  gap: 4vw;
 }
 
 .carrier div {
-    flex: 1;
-    width: 48vw;
+  flex: 1;
+  width: 48vw;
 }
 
 .carrier img {
-    width: 48vw;
-    object-fit: cover;
-    height: 100%;
+  width: 48vw;
+  object-fit: cover;
+  height: 100%;
 }
 
 /****PYRAMIDE DER REINHEIT****/
 .reinheit {
-    display:flex;
-    justify-content: center;
+  display:flex;
+  justify-content: center;
 }
 
 
 /****PROPHEZEICHUNGEN****/
 .body_prophetics {
-    background-color: #fffef6;
+  background-color: #fffef6;
 }
 
 .prophecies {
@@ -233,8 +234,8 @@ ul.navbar {
 }
 
 ul.navbar li {
-    display: inline;
-    float: left;
+  display: inline;
+  float: left;
 }
 
 ul.navbar li a{
@@ -253,19 +254,19 @@ ul.navbar li a:hover:not(.active) {
 ul.navbar li a.active {
   background-color: gold;
   text-decoration: none;
-    color: #5b606a;
+  color: #5b606a;
 }
 
 h1.main-h {
-    margin-top: 75px;
+  margin-top: 75px;
 }
 
 div.content {
-    margin: 7px;
-    margin-top: 75px;
+  margin: 7px;
+  margin-top: 75px;
 }
 
 article.carrier {
-    max-width: 60%;
-    text-align: justify;
+  max-width: 60%;
+  text-align: justify;
 }
